@@ -16,11 +16,11 @@
 set ::env(PDK) "gf180mcuC"
 set ::env(STD_CELL_LIBRARY) "gf180mcu_osu_sc_gp9t3v3"
 
-set ::env(DESIGN_NAME) ffra 
+set ::env(DESIGN_NAME) top
 
 set ::env(VERILOG_FILES) "\
 	$::env(DESIGN_DIR)/../../verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/ffra.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/top.v" 
 
 set ::env(DESIGN_IS_CORE) 0
 

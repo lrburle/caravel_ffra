@@ -49,13 +49,13 @@ set ::env(MACRO_PLACEMENT_CFG) $::env(DESIGN_DIR)/macro.cfg
 ### Black-box verilog and views
 set ::env(VERILOG_FILES_BLACKBOX) "\
 	$::env(DESIGN_DIR)/../../verilog/rtl/defines.v \
-	$::env(DESIGN_DIR)/../../verilog/rtl/ffra.v"
+	$::env(DESIGN_DIR)/../../verilog/rtl/top.v"
 
 set ::env(EXTRA_LEFS) "\
-	$::env(DESIGN_DIR)/../../lef/ffra.lef"
+	$::env(DESIGN_DIR)/../../lef/top.lef"
 
 set ::env(EXTRA_GDS_FILES) "\
-	$::env(DESIGN_DIR)/../../gds/ffra.gds"
+	$::env(DESIGN_DIR)/../../gds/top.gds"
 
 set ::env(RT_MAX_LAYER) {Metal4}
 

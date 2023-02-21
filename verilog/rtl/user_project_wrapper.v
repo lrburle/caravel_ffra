@@ -109,18 +109,18 @@ user_proj_example mprj (
 endmodule	// user_project_wrapper
 */
 
-ffra mprj (
+top mprj (
     `ifdef USE_POWER_PINS
         .vdd(vdd),	// User area 1 1.8V power
         .vss(vss),	// User area 1 digital ground
     `endif
 
      .clk(wb_clk_i),
-     .rst(wb_rst_i), // unused, but amaranth still creates it
+     .reset(wb_rst_i), // unused, but amaranth still creates it
      .a(io_in[7:0]),
      .b(io_in[15:8]),
-     .ci(io_in[31:16]),
-     .o(io_out[15:0])
+     .sel(io_in[19:16]),
+     .sum(io_out[7:0])
 );
 
 endmodule	// user_project_wrapper
